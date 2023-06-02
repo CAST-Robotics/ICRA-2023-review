@@ -4,11 +4,12 @@ This repository contains a collection of papers presented at the International C
 
 ICRA is a premier international forum for robotics researchers to present their latest work and exchange ideas with colleagues from around the world.
 
-This repository is a similar attempt like PaoPaoRobot repos [1] to collect research papers and resources in the field of robotics to have a good vision for future research. We hope that this repository will be a valuable resource for researchers, students, and anyone else interested in the latest developments in robotics and automation.
+This repository is a similar attempt like PaoPaoRobot repositories [1] to collect research papers and resources in the field of robotics to have a good vision for future research. We hope that this repository will be a valuable resource for researchers, students, and anyone else interested in the latest developments in robotics and automation.
 
 To make it easier to navigate the papers, they are organized by session. Each session has its own folder, and the papers presented in that session are stored in the corresponding folder.
 
 - [SLAM](./SLAM)
-- [Session2]()
+- [Soft Robot Applications](./SoftRobotApplications)
 
+## References
 [1] https://github.com/PaoPaoRobot
