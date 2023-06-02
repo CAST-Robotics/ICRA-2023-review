@@ -13,6 +13,7 @@ To make it easier to navigate the papers, they are organized by session. Each se
 - [Design of Mechanisms](./DesignofMechanisms)
 - [Planning](./Planning)
 - [Reinforcement Learning](./ReinforcementLearning)
+- [Marine and Field Robotics](./MarineAndFieldRobotics)
 
 ## References
 [1] https://github.com/PaoPaoRobot

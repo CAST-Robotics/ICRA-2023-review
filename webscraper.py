@@ -48,7 +48,7 @@ def format_markdown(papers):
 
 if __name__ == '__main__':
 
-    path = "./Sessions/rl.html"
+    path = "./Sessions/marine.html"
 
     # Open local HTML file
     with open(path, 'r') as f:
