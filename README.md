@@ -10,6 +10,8 @@ To make it easier to navigate the papers, they are organized by session. Each se
 
 - [SLAM](./SLAM)
 - [Soft Robot Applications](./SoftRobotApplications)
+- [Design of Mechanisms](./DesignofMechanisms)
+- [Planning](./Planning)
 
 ## References
 [1] https://github.com/PaoPaoRobot
