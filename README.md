@@ -12,6 +12,7 @@ To make it easier to navigate the papers, they are organized by session. Each se
 - [Soft Robot Applications](./SoftRobotApplications)
 - [Design of Mechanisms](./DesignofMechanisms)
 - [Planning](./Planning)
+- [Reinforcement Learning](./ReinforcementLearning)
 
 ## References
 [1] https://github.com/PaoPaoRobot
