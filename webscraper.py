@@ -1,5 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
+import os
 
 def parse_html(html_file):
     """
@@ -45,15 +46,40 @@ def format_markdown(papers):
 
     return markdown
 
+def process_session_file(html_path):
+    """
+    Process a single HTML file containing information about a session.
+
+    Args:
+        html_path (str): The path to the HTML file.
+
+    Returns:
+        str: The formatted Markdown string.
+    """
+    # Open the HTML file and read its contents
+    with open(html_path, 'r') as f:
+        html = f.read()
+
+    # Parse the HTML and extract the paper information
+    papers = parse_html(html)
+
+    # Format the paper information as a Markdown list
+    markdown = format_markdown(papers)
+    
+    # Create a directory with the same name as the HTML file
+    dir_path = os.path.splitext(html_path)[0]
+    os.makedirs(dir_path, exist_ok=True)
+
+    # Write the formatted Markdown to a README.md file in the new directory
+    with open(os.path.join(dir_path, 'README.md'), 'w') as f:
+        f.write(markdown)
+
+    return markdown
 
 if __name__ == '__main__':
 
-    path = "./Sessions/marine.html"
+    session_files = sorted([f for f in os.listdir('./Sessions') if f.endswith('.html')])
 
-    # Open local HTML file
-    with open(path, 'r') as f:
-        html = f.read()
-    
-    papers = parse_html(html)
-    markdown = format_markdown(papers)
-    print(markdown)
+    for session_file in session_files:
+        # Process each HTML file and write the formatted Markdown to a README.md file in a new directory
+        markdown = process_session_file(os.path.join('./Sessions', session_file))
