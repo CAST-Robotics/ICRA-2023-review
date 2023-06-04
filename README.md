@@ -6,6 +6,8 @@ ICRA is a premier international forum for robotics researchers to present their 
 
 This repository is a similar attempt like PaoPaoRobot repositories [1] to collect research papers and resources in the field of robotics to have a good vision for future research. We hope that this repository will be a valuable resource for researchers, students, and anyone else interested in the latest developments in robotics and automation.
 
+We have gathered supplementary materials such as PDFs, videos, and code for selected sessions that we found particularly relevant to our own research interests. However, we understand that there may be other papers in this collection that could benefit from additional resources and information. In order to make this repository as comprehensive and useful as possible, we welcome contributions from the community. If you have any relevant materials or insights related to any of the papers in this collection, please feel free to add them to this repository.
+
 To make it easier to navigate the papers, they are organized by session. Each session has its own folder, and the papers presented in that session are stored in the corresponding folder.
 
 - [3D Vision](./3DVision)
