@@ -79,7 +79,15 @@ def process_session_file(html_path):
 if __name__ == '__main__':
 
     session_files = sorted([f for f in os.listdir('./Sessions') if f.endswith('.html')])
-
+    
+    readme = ""
     for session_file in session_files:
         # Process each HTML file and write the formatted Markdown to a README.md file in a new directory
         markdown = process_session_file(os.path.join('./Sessions', session_file))
+        # Process main README file
+        with open(os.path.join('./Sessions', session_file), 'r') as f:
+            soup = BeautifulSoup(f.read(), 'html.parser')
+            page_title = soup.find('h1', {'class': 'm-bottom-25'})
+            readme += f"- [{page_title.text}](./{os.path.splitext(session_file)[0]})\n"
+    
+    print (readme)
