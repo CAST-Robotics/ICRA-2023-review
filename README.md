@@ -1,6 +1,9 @@
 # ICRA-2023-review
 
-![ICRA Logo](icra23_logo.png)
+<p align="center">
+  <img src="icra23_logo.png" />
+</p>
+
 This repository contains a collection of papers presented at the International Conference on Robotics and Automation (ICRA) 2023, which took place in London from May 29th to June 3rd 2023.
 
 ICRA is a premier international forum for robotics researchers to present their latest work and exchange ideas with colleagues from around the world.
